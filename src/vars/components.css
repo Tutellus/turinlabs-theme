@@ -1,0 +1,33 @@
+:root {
+  --button-primary-background: linear-gradient(
+    180deg,
+    var(--color-primary-strong),
+    var(--color-primary)
+  );
+  --button-accent-background: linear-gradient(
+    180deg,
+    var(--color-accent-strong),
+    var(--color-accent)
+  );
+  --button-error-background: linear-gradient(
+    180deg,
+    var(--color-error-strong),
+    var(--color-error)
+  );
+  --button-primary-text-color: var(--color-white);
+  --button-accent-text-color: var(--color-black);
+  --button-error-text-color: var(--color-black);
+}
+
+.dark {
+  --button-primary-background: linear-gradient(
+    180deg,
+    var(--color-primary),
+    var(--color-primary-strong)
+  );
+  --button-accent-background: linear-gradient(
+    180deg,
+    var(--color-accent),
+    var(--color-accent-strong)
+  );
+}

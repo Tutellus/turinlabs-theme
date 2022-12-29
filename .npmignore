@@ -1,0 +1,9 @@
+# dot files
+.editorconfig
+.gitignore
+
+# Node
+node_modules
+
+npm-debug.log
+src

@@ -1,0 +1,44 @@
+{
+  "name": "@tutellus/turinlabs-theme",
+  "version": "1.0.0",
+  "description": "Frontend Style guide of Turinlabs",
+  "main": "lib/index.css",
+  "scripts": {
+    "clean": "rm -rf lib && mkdir lib",
+    "build": "postcss src/index.css -o lib/index.css --use postcss-import autoprefixer cssnano",
+    "lint": "stylelint '**/*.css'",
+    "dev:link": "npm link && npm run watch",
+    "watch": "postcss src/index.css -o lib/index.css --watch",
+    "publish:major": "npm run build && npm version major && git push origin main --follow-tags",
+    "publish:minor": "npm run build && npm version minor && git push origin main --follow-tags",
+    "publish:patch": "npm run build && npm version patch && git push origin main --follow-tags",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tutellus/turinlabs-theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tutellus/turinlabs-theme/issues"
+  },
+  "homepage": "https://github.com/Tutellus/turinlabs-theme#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "cssnano": "^5.1.7",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "mkdirp": "^1.0.4",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.1.0",
+    "prettier": "^2.6.1",
+    "stylelint": "^14.6.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^25.0.0"
+  },
+  "dependencies": {
+    "@tutellus/tutellus-theme": "1"
+  }
+}

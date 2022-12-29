@@ -1,0 +1,60 @@
+/* stylelint-disable function-calc-no-invalid */
+:root {
+  /* Colors */
+  --color-primary: #003da6;
+  --color-primary-strong: #2d58f4;
+  --color-primary-soft: #001f54;
+
+  /* accent */
+  --color-accent: #00ce7c;
+  --color-accent-strong: #2ed9c3;
+  --color-accent-soft: #008375;
+
+  /* gray */
+  --color-gray: #c4c4c4;
+  --color-gray-strong: #4a4a4a;
+  --color-gray-soft: #7a7a7a;
+
+  /* generics */
+  --color-background: #ecedee;
+  --color-surface: #f6f7f8;
+  --color-text: var(--color-gray-soft);
+  --color-text-highlighted: var(--color-gray-strong);
+  --color-white: #fff;
+  --color-black: #000;
+
+  /* stateful */
+  --color-success: #05f546;
+  --color-warning: #f90;
+  --color-error: #dc2626;
+  --color-error-strong: #ff5724;
+}
+
+.dark {
+  /* Colors */
+
+  /* primary */
+  --color-primary: #2d58f4;
+  --color-primary-strong: #003da6;
+  --color-primary-soft: #001f54;
+
+  /* accent */
+  --color-accent: #2ed9c3;
+  --color-accent-strong: #00ce7c;
+  --color-accent-soft: #008375;
+
+  /* gray */
+  --color-gray: #c4c4c4;
+  --color-gray-strong: #f2f2f2;
+  --color-gray-soft: #d9d9d9;
+
+  /* generics */
+  --color-background: #01041e;
+  --color-surface: #131839;
+  --color-text: var(--color-gray-soft);
+  --color-text-highlighted: var(--color-gray-strong);
+  --color-success: #79fc9c;
+  --color-warning: #ffb240;
+  --color-error: #ff5724;
+  --color-error-strong: #dc2626;
+}
